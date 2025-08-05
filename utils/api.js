@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://192.168.166.44:3000';
+const API_BASE_URL = 'http://10.145.220.229:3000';
 
 export const api = {
   // Get all ideas

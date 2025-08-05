@@ -23,7 +23,8 @@ const LeaderboardScreen = () => {
       else setIsLoading(true);
 
       const leaderboardData = await api.getLeaderboard();
-      setTopIdeas(leaderboardData);
+      // Limit to top 3 ideas
+      setTopIdeas(leaderboardData.slice(0, 3));
     } catch (error) {
       console.error('Error fetching leaderboard:', error);
     } finally {
